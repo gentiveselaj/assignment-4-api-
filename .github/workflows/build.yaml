@@ -20,6 +20,7 @@ jobs:
       uses: aws-actions/amazon-ecr-login@v1
     - name: Install dependencies
       id: npm-install
+      working-directory: api
       run: |
         npm install
     # - name: Run unit tests
